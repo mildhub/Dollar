@@ -1,0 +1,41 @@
+<!doctype html>
+<html>
+  <head>
+	<meta charset="utf-8">
+	<title>달러 프로그램</title>
+	<link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
+	<link href="deco.css" rel="stylesheet"/>
+  </head>
+  <body>
+		<div id="tap">
+			<div class="btn one" onclick="x()"></div>
+			<div class="btn two"></div>
+			<div class="btn three"></div>
+		</div>
+		<div id="screen">
+			<header>
+				<h1>달러를 한화로 바꾸는 프로그램</h1>
+			</header>
+			<main>
+				<input type="text" placeholder="Dollar" value="" id="primitive">달러
+				<p><input type="button" value="전환" onclick="exchange()"></p>
+				환산 결과 : <span id="print"></span>
+				<div id="tip">
+					&check; Note:
+					<ul>
+						<li>환율: 1달러 &rsaquo; 1063.82979원 (반올림시 1064원)</li>
+						<li>한화로 조단위가 넘어가는 금액은 환산할 수 없습니다.</li>
+						<li>띄어쓰기는 쓰지마세요.</li>
+					</ul>	
+				</div>
+			</main>
+			<aside>
+				<input type="button" value="terminal" onclick="cmd(this)">
+			</aside>
+			<footer>
+				Copyright &copy; copyright 2018 home Inc.
+			</footer>
+		</div>
+  </body>
+  <script src="import.js"></script>
+</html>
